@@ -1,0 +1,72 @@
+{
+  "nodes": [
+    "DEPOT",
+    "A",
+    "B",
+    "C",
+    "D",
+    "E"
+  ],
+  "edges": [
+    {
+      "from": "DEPOT",
+      "to": "A",
+      "distance": 4
+    },
+    {
+      "from": "DEPOT",
+      "to": "B",
+      "distance": 7
+    },
+    {
+      "from": "DEPOT",
+      "to": "C",
+      "distance": 9
+    },
+    {
+      "from": "A",
+      "to": "B",
+      "distance": 3
+    },
+    {
+      "from": "A",
+      "to": "C",
+      "distance": 5
+    },
+    {
+      "from": "A",
+      "to": "D",
+      "distance": 8
+    },
+    {
+      "from": "B",
+      "to": "C",
+      "distance": 2
+    },
+    {
+      "from": "B",
+      "to": "D",
+      "distance": 6
+    },
+    {
+      "from": "B",
+      "to": "E",
+      "distance": 7
+    },
+    {
+      "from": "C",
+      "to": "D",
+      "distance": 3
+    },
+    {
+      "from": "C",
+      "to": "E",
+      "distance": 6
+    },
+    {
+      "from": "D",
+      "to": "E",
+      "distance": 2
+    }
+  ]
+}

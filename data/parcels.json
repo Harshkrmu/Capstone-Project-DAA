@@ -1,0 +1,58 @@
+[
+  {
+    "id": "P101",
+    "destination": "A",
+    "weight": 8,
+    "value": 90,
+    "priority": 5,
+    "deadline": "2026-11-16"
+  },
+  {
+    "id": "P102",
+    "destination": "B",
+    "weight": 12,
+    "value": 130,
+    "priority": 4,
+    "deadline": "2026-11-16"
+  },
+  {
+    "id": "P103",
+    "destination": "C",
+    "weight": 6,
+    "value": 70,
+    "priority": 5,
+    "deadline": "2026-11-17"
+  },
+  {
+    "id": "P104",
+    "destination": "D",
+    "weight": 10,
+    "value": 110,
+    "priority": 3,
+    "deadline": "2026-11-18"
+  },
+  {
+    "id": "P105",
+    "destination": "E",
+    "weight": 5,
+    "value": 55,
+    "priority": 2,
+    "deadline": "2026-11-17"
+  },
+  {
+    "id": "P106",
+    "destination": "B",
+    "weight": 7,
+    "value": 80,
+    "priority": 4,
+    "deadline": "2026-11-19"
+  },
+  {
+    "id": "P107",
+    "destination": "D",
+    "weight": 9,
+    "value": 95,
+    "priority": 1,
+    "deadline": "2026-11-20"
+  }
+]

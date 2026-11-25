@@ -1,0 +1,79 @@
+Validation performed during project generation
+main.py exit code: 0
+unit tests exit code: 0
+
+Program output:
+=================================================================
+                 MINI-COURIER PLANNER
+=================================================================
+Vehicle capacity: 25 kg | Starting point: DEPOT
+
+PARCELS (sorted by priority, then earliest deadline)
+-----------------------------------------------------------------
+ID      Destination          Weight    Value   Priority    Deadline
+P101    A                         8       90          5  2026-11-16
+P103    C                         6       70          5  2026-11-17
+P102    B                        12      130          4  2026-11-16
+P106    B                         7       80          4  2026-11-19
+P104    D                        10      110          3  2026-11-18
+P105    E                         5       55          2  2026-11-17
+P107    D                         9       95          1  2026-11-20
+
+OPTIMAL PACKING PLAN (0/1 KNAPSACK)
+-----------------------------------------------------------------
+Selected parcels: P103, P102, P106
+Total weight: 25 / 25 kg
+Total delivery value: 280
+
+SHORTEST PATHS FROM DEPOT (DIJKSTRA)
+-----------------------------------------------------------------
+DEPOT -> C: 9 km | Path: DEPOT -> C
+DEPOT -> B: 7 km | Path: DEPOT -> B
+
+DELIVERY ROUTE (NEAREST NEIGHBOR TSP APPROXIMATION)
+-----------------------------------------------------------------
+DEPOT -> B -> C -> DEPOT
+Estimated route distance: 18 km
+
+NOTE: Nearest Neighbor is a heuristic; it does not guarantee the globally shortest TSP tour.
+
+PERFORMANCE TESTING
+-----------------------------------------------------------------
+   10 parcels | sorting: 0.0139 ms | knapsack: 0.0381 ms
+   30 parcels | sorting: 0.0391 ms | knapsack: 0.1007 ms
+   60 parcels | sorting: 0.0819 ms | knapsack: 0.1760 ms
+  100 parcels | sorting: 0.1647 ms | knapsack: 0.2887 ms
+
+Benchmark data saved to results/runtime_results.csv
+If matplotlib is installed, results/runtime_chart.png is also generated.
+
+Project run completed successfully.
+
+Errors:
+Spreadsheet runtime warmup failed during python startup
+Traceback (most recent call last):
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/patches/warm_spreadsheet_runtime_on_startup.py", line 26, in warm_spreadsheet_runtime_on_startup
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/spreadsheet_warmup.py", line 785, in warm_spreadsheet_runtime
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/spreadsheet_warmup.py", line 718, in _warm_feature_flows
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/spreadsheet_warmup.py", line 509, in _warm_drawing_and_image_flows
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/generated/interface/models.py", line 32861, in bring_to_front
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/rpc/remote.py", line 764, in __call__
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/rpc/client.py", line 175, in call
+artifact_tool.rpc.client.RemoteError: Element ordering requires an owning element collection.
+
+Unit test output:
+Spreadsheet runtime warmup failed during python startup
+Traceback (most recent call last):
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/patches/warm_spreadsheet_runtime_on_startup.py", line 26, in warm_spreadsheet_runtime_on_startup
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/spreadsheet_warmup.py", line 785, in warm_spreadsheet_runtime
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/spreadsheet_warmup.py", line 718, in _warm_feature_flows
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/spreadsheet_warmup.py", line 509, in _warm_drawing_and_image_flows
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/generated/interface/models.py", line 32861, in bring_to_front
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/rpc/remote.py", line 764, in __call__
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/rpc/client.py", line 175, in call
+artifact_tool.rpc.client.RemoteError: Element ordering requires an owning element collection.
+....
+----------------------------------------------------------------------
+Ran 4 tests in 0.000s
+
+OK
